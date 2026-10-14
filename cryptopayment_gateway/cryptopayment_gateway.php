@@ -28,7 +28,7 @@ class Cryptopayment_gateway extends PaymentModule
     {
         $this->name = 'cryptopayment_gateway';
         $this->tab = 'payments_gateways';
-        $this->version = '1.0.0';
+        $this->version = '1.0.1';
         $this->author = 'PayGate.to';
         $this->need_instance = 0;
         $this->bootstrap = true;

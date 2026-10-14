@@ -2,7 +2,7 @@
 <module>
     <name>cryptopayment_gateway</name>
     <displayName><![CDATA[Crypto Payment Gateway (PayGate.to)]]></displayName>
-    <version><![CDATA[1.0.0]]></version>
+    <version><![CDATA[1.0.1]]></version>
     <description><![CDATA[Accept cryptocurrencies with instant payouts to your own wallets and without KYC. QR code on your own store, or the hosted multi-coin checkout page.]]></description>
     <author><![CDATA[PayGate.to]]></author>
     <tab><![CDATA[payments_gateways]]></tab>

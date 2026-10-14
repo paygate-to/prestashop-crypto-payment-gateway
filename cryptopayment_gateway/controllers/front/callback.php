@@ -164,7 +164,7 @@ class Cryptopayment_gatewayCallbackModuleFrontController extends ModuleFrontCont
         if ($current !== $idState) {
             $state = new OrderState($current);
 
-            if (Validate::isLoadedObject($state) && ($state->paid || $state->shipped || $state->delivered)) {
+            if (Validate::isLoadedObject($state) && ($state->paid || $state->shipped || $state->delivery)) {
                 $message .= ' [Notice] The order status was left as set by the store.';
             } else {
                 $history = new OrderHistory();
