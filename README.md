@@ -14,7 +14,7 @@ PrestaShop crypto payment gateway with instant payouts. No KYC crypto payment ga
 - Choose who pays the blockchain fee: you or the customer.
 - If a customer sends the wrong token or uses the wrong network, supported tokens are still forwarded to you automatically.
 - Works with your own checkout domain and a free dedicated API endpoint ([custom domain guide](https://paygate.to/white-label-api-custom-domain-guide/)).
-- Fees: **1.5% flat rate + blockchain fees**.
+- Fees: **1% flat rate + blockchain fees**.
 - If the customer sends less than the order total, the rest can be sent to the same address and both payments are added up.
 
 📘 **Step-by-step guide with screenshots:** [https://paygate.to/crypto-payment-gateway-no-kyc-instant-payouts/prestashop/](https://paygate.to/crypto-payment-gateway-no-kyc-instant-payouts/prestashop/)
