@@ -56,7 +56,8 @@ class Cryptopayment_gatewayValidationModuleFrontController extends ModuleFrontCo
         // One callback secret and status key for the life of the cart.
         $nonce = !empty($existing['nonce']) ? $existing['nonce'] : PaygateCryptoApi::token();
         $statusKey = !empty($existing['status_key']) ? $existing['status_key'] : PaygateCryptoApi::token();
-        $callbackUrl = $this->context->link->getModuleLink($this->module->name, 'callback', ['id_cart' => (int) $cart->id, 'nonce' => $nonce], true);
+        // Plain index.php form: it keeps working when friendly URLs are turned on or off later.
+        $callbackUrl = $this->context->link->getBaseLink(null, true) . 'index.php?fc=module&module=' . $this->module->name . '&controller=callback&id_cart=' . (int) $cart->id . '&nonce=' . rawurlencode($nonce);
 
         if ($mode === 'coin') {
             $result = $this->createCoinPayment($cart, $currency, $total, $nonce, $statusKey, $callbackUrl);
