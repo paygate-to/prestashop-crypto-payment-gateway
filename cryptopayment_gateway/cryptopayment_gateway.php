@@ -20,7 +20,7 @@ use PrestaShop\PrestaShop\Core\Payment\PaymentOption;
 class Cryptopayment_gateway extends PaymentModule
 {
     /** Payout wallet per network family accepted by crypto/multi-hosted-wallet.php */
-    const MULTI_WALLETS = ['evm', 'btc', 'bitcoincash', 'ltc', 'doge', 'solana', 'trc20', 'xmr', 'zec', 'ton'];
+    const MULTI_WALLETS = ['evm', 'btc', 'bitcoincash', 'ltc', 'doge', 'solana', 'trc20', 'xmr', 'zec', 'ton', 'xrp'];
 
     const TOLERANCES = ['1' => '0%', '0.99' => '1%', '0.98' => '2%', '0.97' => '3%', '0.96' => '4%', '0.95' => '5%', '0.94' => '6%', '0.93' => '7%', '0.92' => '8%', '0.91' => '9%', '0.90' => '10%'];
 
@@ -28,7 +28,7 @@ class Cryptopayment_gateway extends PaymentModule
     {
         $this->name = 'cryptopayment_gateway';
         $this->tab = 'payments_gateways';
-        $this->version = '1.0.1';
+        $this->version = '1.0.2';
         $this->author = 'PayGate.to';
         $this->need_instance = 0;
         $this->bootstrap = true;
@@ -434,6 +434,7 @@ class Cryptopayment_gateway extends PaymentModule
             'xmr' => 'Monero Wallet (XMR)',
             'zec' => 'Zcash Wallet (ZEC)',
             'ton' => 'TON Wallet (Toncoin, TON USDT)',
+            'xrp' => 'XRP Wallet (XRP Ledger: r..., r...?dt=TAG with a destination tag, or an X-address)',
         ];
 
         $multiInputs = [

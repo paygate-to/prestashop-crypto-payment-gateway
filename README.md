@@ -6,7 +6,7 @@ PrestaShop crypto payment gateway with instant payouts. No KYC crypto payment ga
 
 ## Features
 
-- Accept **Bitcoin, Solana, Monero, Zcash, ETH, USDT, USDC** and hundreds of other coins and tokens on BTC, BCH, LTC, DOGE, ETH, ERC20, BEP20, Polygon, Arbitrum, Base, Optimism, Avalanche-C, Solana, Tron (TRC20), TON and more ([full list and minimums](https://paygate.to/crypto-payment-gateway-no-kyc-instant-payouts/#minimumorder)).
+- Accept **Bitcoin, Solana, Monero, Zcash, ETH, USDT, USDC** and hundreds of other coins and tokens on BTC, BCH, LTC, DOGE, ETH, ERC20, BEP20, Polygon, Arbitrum, Base, Optimism, Avalanche-C, Solana, Tron (TRC20), TON, the XRP Ledger and more ([full list and minimums](https://paygate.to/crypto-payment-gateway-no-kyc-instant-payouts/#minimumorder)).
 - **Instant payouts**: crypto is forwarded to your wallet the moment the payment is confirmed, with no delay or holds.
 - **No KYC and no registration**: you and your customers stay anonymous.
 - **QR code on your own site** with a unique address for every order, or one **Multicoin** option where the customer picks any coin on the hosted page.
@@ -61,7 +61,7 @@ PrestaShop crypto payment gateway with instant payouts. No KYC crypto payment ga
 | Setting | Description | Default |
 |---|---|---|
 | Accepted Coins (Individual coins) | Tick a coin and enter its payout wallet. | none |
-| Network wallets (Multicoin) | EVM, BTC, BCH, LTC, DOGE, SOL, TRX/TRC20, XMR, ZEC, TON. | empty |
+| Network wallets (Multicoin) | EVM, BTC, BCH, LTC, DOGE, SOL, TRX/TRC20, XMR, ZEC, TON, XRP (`r…`, `r…?dt=TAG` or an X-address). | empty |
 | API Domain | Your dedicated API endpoint. | empty (uses api.paygate.to) |
 | Custom Domain (Multicoin) | Domain of the hosted checkout page. | checkout.paygate.to |
 | Underpaid Tolerance | Accept payments slightly below the total (0–10%). | 1% |

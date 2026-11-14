@@ -263,13 +263,15 @@ class PaygateCryptoApi
     /**
      * A wallet or pay-in address that is safe to store and display.
      *
+     * An XRP Ledger wallet may end with a destination tag: r...?dt=777.
+     *
      * @param string $address
      *
      * @return bool
      */
     public static function isAddress($address)
     {
-        return (bool) preg_match('#^[A-Za-z0-9:._+/=-]{8,200}$#', (string) $address);
+        return (bool) preg_match('#^[A-Za-z0-9:._+/=-]{8,200}(\\?dt=[0-9]{1,10})?$#', (string) $address);
     }
 
     /**
